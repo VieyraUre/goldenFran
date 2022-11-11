@@ -1,0 +1,33 @@
+//layout
+:root {
+  --header-height 		: 4rem;
+  @include from(l) {
+    --header-height 	: 5rem;
+  }
+	//native color vars
+	--color-background      	: #242440;
+	--color-border      	: #7F7C7C;
+	--color-first     	: #edd41b;
+	--color-first-opacy     	: #c4b441;
+	--color-second      	: #aa7b32 ;
+	--color-body      	: #FFF;
+	--color-hover      	: #303052;
+}
+// Sass Color Vars
+$color-first 			: var(--color-first			);
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+::selection {
+	color: white;
+	background: #00CBFF;
+}
+
+strong {
+	font-weight 	: 700;
+}

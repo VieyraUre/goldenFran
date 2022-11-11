@@ -1,0 +1,51 @@
+.btn {
+	border: none;
+    border-radius: 6px;
+	color: var(--color-body);
+	font-weight: bold;
+    padding: 6px;
+	text-transform: uppercase;
+	font-size: var(--small-font-size);
+	cursor: pointer;
+	
+	&__primary {
+		// background: linear-gradient(180.49deg, #AA7B32 -58.25%, #EDD41B 111.72%, #EDD41B 387.73%);
+		// color: var(--color-background);
+		background: var(--color-second);
+
+		@include from(l) {
+			&:hover {
+				background: #99691b;
+				color:  var(--color-body);
+			}
+		}
+	
+	}
+	
+	&__secondary {
+		background-color: transparent;
+		border: 1.5px solid var(--color-second);
+
+		&:active {
+			background: #99691b6c;
+			border: 2px solid var(--color-second);
+		}
+		
+		@include from(l) {
+			&:hover {
+				background: #99691b6c;
+				border: 2px solid var(--color-second);
+			}
+		}
+	}
+
+	
+}
+
+.display {
+	display: none;
+
+	@include from(l) {
+		display: block;
+	}
+}

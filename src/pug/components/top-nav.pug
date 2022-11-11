@@ -1,0 +1,29 @@
+- pages = ['Poker', 'Deportes', 'Casino', 'Caballos', 'Cajero', 'Promociones', 'Blog', 'Eventos'];
+
+
+//- mixin dropdown(img, text) 
+//- 	img(src=img, alt="text")
+//- 	p=text
+
+nav(class='top-nav')
+	div(class='top-nav__container')
+		button(type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
+			span.hamburger-box
+				span.hamburger-inner
+		a(href='./', class='top-nav__link')
+			img(src='assets/img/logo.png', alt='', class='top-nav__logo')
+		ul(class='top-nav__menu')
+			each page in pages 
+				li(class='top-nav__li'): a(href=`${page.split(' ').join('-')}`, class='top-nav__anchor')=page
+		//- div(class='dropdown') 
+		//- 	button(class='dropdown__button') 
+		//- 		img(class="dropdown__button--img" src="assets/img/esp.png", alt="")
+		//- 		p(class="dropdown__button--p") ES
+		//- 		span(class="material-symbols-outlined") expand_more
+			div(class='dropdown__expand')
+				-for(var i = 0; i < lenguajes.length ; i++)
+					-var lenguaje = lenguajes[i]
+					+dropdown(lenguaje.icon, lenguaje.text)
+		div(class='top-nav__btns--container btn')
+			button(type='button', class='btn__secondary btn sign') Ingresar
+			a(href="./", class='btn__primary btn display') Unete

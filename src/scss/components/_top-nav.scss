@@ -1,0 +1,131 @@
+.top-nav{
+	background    	: var(--color-background);
+	position      	: fixed;
+	top           	: 0;
+	width         	: 100%;
+	left          	: 0;
+	display 		: flex;
+	justify-content : center;
+	z-index: 1;
+
+	&__container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height        	: var(--header-height);
+		max-width: 1440px;
+		width: 100%;
+		padding: 16px 15px;
+	}
+
+	&__link{
+		align-self: center;
+	}
+
+	&__logo{
+		height: 3.5rem;
+		width: auto;
+		display: block;
+
+		@include from(l){
+			height: 5rem;
+		}
+	}
+
+	&__btns--container{
+		display: flex;
+		height: var(--header-height);
+		align-items: center;
+		padding: 1rem 0;
+		gap: 12px;
+
+	}
+	
+	&__btns{
+		@include fromTo(s,l){
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			gap: 12px;
+			margin: 16px 0 16px 0;
+		}
+	}
+
+
+	&__menu{
+		position 		: fixed;
+		padding 		: 0 16px;
+		height 			: 100vh;
+		width 			: 260px;
+		background 		: var(--color-background);
+		transition 		: left .5s;
+		overflow-y 		: auto;
+		top 			: var(--header-height);
+		left 			: -260px;
+		&.show-top-nav {
+			left: 0;
+		}
+		@include from(l){
+			align-self: center;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	
+	&__li{
+		align-items: center;
+		color: var(--color-body);
+		display: flex;
+		flex-direction: column;
+		border-bottom: 0.0025rem solid var(--color-body);
+		padding: 18px 0;
+		margin: 0;
+		margin: 0 1em;
+		list-style-type: none;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover {
+			background: var(--color-hover);
+
+			a{
+				color: var(--color-second);
+			}
+		}
+	}
+
+	&__anchor {
+		color: var(--color-body);
+		
+		@include fromTo(s,l){
+			display: block;
+			
+		}
+	}
+​
+	&__mb-iconMenu {
+		position: relative;
+		align-self: center;
+		top: 3px;
+		padding: 0;
+		span{
+			&.hamburger-inner{
+				background: var(--color-body);
+				&::after{}
+				&::before{}
+				&::after, &::before{
+					background: var(--color-body);
+				}
+			}
+		}
+
+		&:focus {
+			outline: 0 !important;
+			-moz-outline-style: none !important;
+			outline: thin dotted;
+			outline: 5px auto -webkit-focus-ring-color;
+			outline-offset: -2px;
+		}
+	}
+} 
