@@ -113,5 +113,19 @@
 					"icon"		:"assets/img/francia.png",
 					"text"		:"FR"
 				}
+			],
+
+		"slider":
+			[
+				{
+					"image"		:"assets/img/slider1.jpg",
+					"alt"		:"jsjsjs"
+				},
+				
+				{
+					"image"		:"assets/img/slider4.jpg",
+					"alt"		:"jsjsjsj"
+				}
+
 			]
 }

@@ -1,25 +1,31 @@
-div(class="ed-container")
+div(class="background")
+div(class="ed-container modal__container")
 	div(class="signUp")
-		h3(class="sign__h3") Inicia sesión
-		form(action="" class="sign__form") 
-			label(for="text" class="sign__form--label") correo electrónico
-				input(type="email" name="email" class="sign__form--input" placeholder="Ingresa tu correo")
+		img(src='assets/img/logo.png', alt="")
+		h3(class="signUp__h3") Crea tu cuenta
+		form(action="" class="signUp__form") 
+			div(class="signUp__form--container") 
+				label(for="text" class="signUp__form--label") Nombre
+					input(type="email" name="email" class="signUp__form--input" placeholder="Ingresa tu nombre")
+				
+				label(for="text" class="signUp__form--label") Apellido
+					input(type="email" name="email" class="signUp__form--input" placeholder="Ingresa tu apellido")
 			
-			label(for="text" class="sign__form--label") correo electrónico
-				input(type="email" name="email" class="sign__form--input" placeholder="Ingresa tu correo")
+			label(for="email" class="signUp__form--label") correo electrónico
+				input(type="email" name="email" class="signUp__form--input" placeholder="Ingresa tu correo")
 			
-			label(for="email" class="sign__form--label") correo electrónico
-				input(type="email" name="email" class="sign__form--input" placeholder="Ingresa tu correo")
+			label(for="password" class="signUp__form--label") Contraseña 
+				input(type="password" name="password" class="signUp__form--input" placeholder="Ingresa tu contraseña")
 			
-			label(for="password" class="sign__form--label") Contraseña 
-				input(type="password" name="password" class="sign__form--input" placeholder="Ingresa tu contraseña")
+			label(for="password" class="signUp__form--label") Confirmar Contraseña 
+				input(type="password" name="password" class="signUp__form--input" placeholder="Comfirma tu contraseña")
 			
-			label(for="password" class="sign__form--label") Confirmar Contraseña 
-				input(type="password" name="password" class="sign__form--input" placeholder="Ingresa tu contraseña")
+			label(for="checkbox")
+				input(type="checkbox" name="checkbox" id="cbox1" value="first_checkbox") 
+				a(href="./" class="signUp__form--anchor")  Leer las reglas
 			
-			div(class="sign__form--terms") 
-				p ¿No tienes cuenta? 
-					a(href="./")  Regístrate
-			a(href="./" class="sign__form--anchor")  Leer las reglas
+			button(type="submit" class="signUp__form--button btn btn__primary") Resgistrarme
 			
-			button(type="submit" class="sign__form--button btn btn__primary") Resgistrarme
+			div(class="signUp__form--signup") 
+				p ¿Ya tienes cuenta? 
+					a(href="./")  Iniciar Sesión

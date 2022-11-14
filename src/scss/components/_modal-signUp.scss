@@ -1,0 +1,108 @@
+.background {
+    background-image: url(../../assets/img/signUp-back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(4px);
+    position: relative;
+}
+
+.signUp {
+    align-items: center;
+	background-color: var(--color-background);
+	width: 90%;
+	border-radius: 8px;
+	padding: 24px;
+	z-index: 10;
+	margin: 32px auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    @include from(l) {
+        width: 40%;
+    }
+
+
+    img {
+        margin: auto;
+        width:56px;
+        margin-bottom: 24px;
+    }
+
+	&__h3 {
+		color: var(--color-body);
+		text-align: center;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+
+    &__form--container {
+        @include from(l) {
+            display: flex;
+            gap: 24px;
+        }
+    }
+
+	&__form--label {
+		color: var(--color-body);
+		font-size: var(--small-font-size);
+		margin-bottom: 1rem;
+		text-transform: capitalize;
+	}
+
+	&__form--input {
+		border: 1px solid var(--color-border);
+		border-radius: 8px;
+		padding: 16px;
+		background-color: var(--color-hover);
+		width: 100%;
+		color: var(--color-body);
+
+		&::placeholder {
+			color: var(--color-border);
+		}
+
+	}
+
+	&__form--button {
+		width: 100%;
+		padding: 12px;
+
+	}
+
+	&__form--signup {
+		display: flex;
+		flex-direction: column;
+		margin-top: 16px;
+		padding: 16px 0;
+		text-align: center;
+		width: 100%;
+		font-weight: bold;
+
+		p {
+			color: var(--color-body);
+			margin-bottom: 0;
+		}
+
+		a {
+			color: var(--color-first-opacy);
+
+			&:hover {
+				color: var(--color-first);
+			}
+		}
+
+	}
+
+	&__form--anchor {
+		color: var(--color-first-opacy);
+		text-align: center;
+	}
+}

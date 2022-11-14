@@ -60,12 +60,12 @@
             <li class="top-nav__li"><a class="top-nav__anchor" href="Eventos">Eventos</a></li>
           </ul>
           <div class="top-nav__btns--container btn">
-            <button class="btn__secondary btn sign" type="button">Ingresar</button><a class="btn__primary btn display" href="./">Unete</a>
+            <button class="btn__secondary btn sign" type="button">Ingresar</button><a class="btn__primary btn display" href="../signUp.html">Unete</a>
           </div>
         </div>
       </nav>
       <div class="overlay"></div>
-      <div class="ed-container modal__container">
+      <div class="ed-container modal__container close">
         <div class="modal">
           <h3 class="modal__h3">Inicia sesión</h3>
           <form class="modal__form" action=""> 
@@ -77,36 +77,42 @@
             </label>
             <button class="modal__form--button btn btn__primary" type="submit">Iniciar sesión</button>
             <div class="modal__form--signup"> 
-              <p>¿No tienes cuenta? <a href="./"> Regístrate</a></p>
-            </div><a class="modal__form--anchor" href="./"> ¿Olvidaste la Contraseña?</a>
+              <p>¿No tienes cuenta? <a href="../signUp.html"> Regístrate</a></p>
+            </div><a class="modal__form--anchor" hrefs="./"> ¿Olvidaste la Contraseña?</a>
           </form>
         </div>
       </div>
     </header>
     <main class="main-container">
-      <div class="ed-container">
-        <div class="signUp">
-          <h3 class="sign__h3">Inicia sesión</h3>
-          <form class="sign__form" action=""> 
-            <label class="sign__form--label" for="text">correo electrónico
-              <input class="sign__form--input" type="email" name="email" placeholder="Ingresa tu correo">
+      <div class="background"></div>
+      <div class="ed-container modal__container">
+        <div class="signUp"><img src="assets/img/logo.png" alt="">
+          <h3 class="signUp__h3">Crea tu cuenta</h3>
+          <form class="signUp__form" action=""> 
+            <div class="signUp__form--container"> 
+              <label class="signUp__form--label" for="text">Nombre
+                <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu nombre">
+              </label>
+              <label class="signUp__form--label" for="text">Apellido
+                <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu apellido">
+              </label>
+            </div>
+            <label class="signUp__form--label" for="email">correo electrónico
+              <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu correo">
             </label>
-            <label class="sign__form--label" for="text">correo electrónico
-              <input class="sign__form--input" type="email" name="email" placeholder="Ingresa tu correo">
+            <label class="signUp__form--label" for="password">Contraseña 
+              <input class="signUp__form--input" type="password" name="password" placeholder="Ingresa tu contraseña">
             </label>
-            <label class="sign__form--label" for="email">correo electrónico
-              <input class="sign__form--input" type="email" name="email" placeholder="Ingresa tu correo">
+            <label class="signUp__form--label" for="password">Confirmar Contraseña 
+              <input class="signUp__form--input" type="password" name="password" placeholder="Comfirma tu contraseña">
             </label>
-            <label class="sign__form--label" for="password">Contraseña 
-              <input class="sign__form--input" type="password" name="password" placeholder="Ingresa tu contraseña">
+            <label for="checkbox">
+              <input type="checkbox" name="checkbox" id="cbox1" value="first_checkbox"><a class="signUp__form--anchor" href="./"> Leer las reglas</a>
             </label>
-            <label class="sign__form--label" for="password">Confirmar Contraseña 
-              <input class="sign__form--input" type="password" name="password" placeholder="Ingresa tu contraseña">
-            </label>
-            <div class="sign__form--terms"> 
-              <p>¿No tienes cuenta? <a href="./"> Regístrate</a></p>
-            </div><a class="sign__form--anchor" href="./"> Leer las reglas</a>
-            <button class="sign__form--button btn btn__primary" type="submit">Resgistrarme</button>
+            <button class="signUp__form--button btn btn__primary" type="submit">Resgistrarme</button>
+            <div class="signUp__form--signup"> 
+              <p>¿Ya tienes cuenta? <a href="./"> Iniciar Sesión</a></p>
+            </div>
           </form>
         </div>
       </div>
