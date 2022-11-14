@@ -9,11 +9,12 @@ body {
 .main-header{}
 .main-container{
 	.container{
-		border: 1px solid black;
-		position: relative;
+		//border: 1px solid black;
+		//position: relative;
 		width: 100%;
-		max-width: 1280px;
+		max-width: 1440px;
 		margin: 0 auto;
+
 		&__slider{
 			min-height: 25vh;
 			background: red;
@@ -21,6 +22,7 @@ body {
 				margin-right: 250px;
 			}
 		}
+
 		&__signup{
 			width: 250px;
 			min-height: 25vh;
