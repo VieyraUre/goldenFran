@@ -4,8 +4,22 @@
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    filter: blur(4px);
+	margin: 0;
     position: relative;
+	
+	
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.background-color {
+	background-color: black;
+	opacity: 0.3;
+	filter: blur(4px);
+	height: 100vh;
+	width: 100vw;
+	
 }
 
 .signUp {
@@ -15,7 +29,7 @@
 	border-radius: 8px;
 	padding: 24px;
 	z-index: 10;
-	margin: 32px auto;
+	margin: 24px auto;
     position: absolute;
     top: 0;
     right: 0;
@@ -43,21 +57,19 @@
 		margin: 0;
 	}
 
-    &__form--container {
-        @include from(l) {
-            display: flex;
-            gap: 24px;
-        }
-    }
+	// &__form--container {
+	// 	width: calc(100% - 2rem);
+	// 	margin-right: 0;
+	// }
 
 	&__form--label {
 		color: var(--color-body);
 		font-size: var(--small-font-size);
-		margin-bottom: 1rem;
 		text-transform: capitalize;
 	}
-
+	
 	&__form--input {
+		margin-bottom: 1rem;
 		border: 1px solid var(--color-border);
 		border-radius: 8px;
 		padding: 16px;
@@ -104,5 +116,23 @@
 	&__form--anchor {
 		color: var(--color-first-opacy);
 		text-align: center;
+	}
+
+	&__form--select {
+		// appearance: none;
+		// -webkit-appearance: none;
+		// -moz-appearance: none;
+
+		background-color: var(--color-hover);
+		border-radius: 0.5rem;
+		color: var(--color-body);
+		padding: 1rem;
+		margin-bottom: 1rem;
+		transition: all 0.25s ease;
+
+		// &::-ms-expand {
+		// 	padding-right: 3rem;
+		// }
+
 	}
 }

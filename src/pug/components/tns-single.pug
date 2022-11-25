@@ -1,14 +1,13 @@
 mixin card(image, alt) 
-	div(class='container')
-		div(class='container__slider')
-			div(class='tns-single' id='tnsSingle')
-				div: img(src=image alt=alt class='tns-single__content')
+	div
+		div(class='tns-single__content'): img(src=image alt=alt class='tns-single__img' )
 
-div(class='ed-container')
-	div(class='ed-item')
-		-for(var i = 0; i < slider.length ; i++)
-			-var slide  = slider[i]
-			+card(slide.image, slide.alt)
+div(class='container')
+	div(class='container__slider')
+		div(class='tns-single' id='tnsSingle')
+			-for(var i = 0; i < slider.length ; i++)
+				-var slide  = slider[i]
+				+card(slide.image, slide.alt)
 
 
 //- div(class='tns-single' id='tnsSingle')

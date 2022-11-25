@@ -1,4 +1,63 @@
-<!DOCTYPE html>
+
+<div class="background-color"></div>
+<div class="ed-container modal__container">
+  <div class="signUp"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a>
+    <h3 class="signUp__h3">Crea tu cuenta</h3>
+    <form class="signUp__form" action=""> 
+      <div class="ed-grid s-grid-1"> 
+        <select class="signUp__form--select" name=""> 
+          <option>EUR</option>
+          <option>ARG</option>
+          <option>MXN</option>
+          <option>USD</option>
+        </select>
+      </div>
+      <div class="signUp__form--container ed-grid s-grid-1 lg-grid-2"> 
+        <label class="signUp__form--label" for="text">Nombre
+          <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu nombre"/>
+        </label>
+        <label class="signUp__form--label" for="text">Apellido
+          <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu apellido"/>
+        </label>
+        <label class="signUp__form--label" for="email">correo electrónico
+          <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu correo"/>
+        </label>
+        <label class="signUp__form--label" for="email">Confirmar correo electrónico
+          <input class="signUp__form--input" type="email" name="email" placeholder="Confirma tu correo"/>
+        </label>
+        <label class="signUp__form--label" for="password">Contraseña 
+          <input class="signUp__form--input" type="password" name="password" placeholder="Ingresa tu contraseña"/>
+        </label>
+        <label class="signUp__form--label" for="password">Confirmar Contraseña 
+          <input class="signUp__form--input" type="number" name="password" placeholder="Comfirma tu contraseña"/>
+        </label>
+      </div>
+      <div class="ed-grid s-grid-1">
+        <label class="signUp__form--label" for="password">Cedula o identificacion del gobierno 
+          <input class="signUp__form--input" type="number" name="password" placeholder="Ingresa tu identificacion"/>
+        </label>
+        <select class="signUp__form--select" name=""> 
+          <option class="signUp__form--option">Costa Rica</option>
+          <option class="signUp__form--option">Belize</option>
+          <option class="signUp__form--option">Venezuela</option>
+        </select>
+        <label class="signUp__form--label" for="password">Fecha de nacimiento 
+          <input class="signUp__form--input" type="date" name="password" placeholder="Ingresa tu fecha de nacimiento"/>
+        </label>
+        <label class="signUp__form--label" for="password">Codigo promocional 
+          <input class="signUp__form--input" type="text" name="password" placeholder="Ingresa el codigo promocional"/>
+        </label>
+        <label for="checkbox">
+          <input type="checkbox" name="checkbox" id="cbox1" value="first_checkbox"/><a class="signUp__form--anchor" href="./"> Leer las reglas</a>
+        </label>
+      </div>
+      <button class="signUp__form--button btn btn__primary" type="submit">Resgistrarme</button>
+      <div class="signUp__form--signup"> 
+        <p>¿Ya tienes cuenta? <a href="./"> Iniciar Sesión</a></p>
+      </div>
+    </form>
+  </div>
+</div><!DOCTYPE html>
 <html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
@@ -44,104 +103,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Registro | goldenFran</title>
   </head>
-  <body class="Registro" overlay itemscope itemtype="http://schema.org/WebPage">
-    <header class="main-header">
-      <nav class="top-nav">
-        <div class="top-nav__container">
-          <button class="top-nav__mb-iconMenu hamburger hamburger--slider-r" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a class="top-nav__link" href="./"><img class="top-nav__logo" src="assets/img/logo.png" alt=""></a>
-          <ul class="top-nav__menu">
-            <li class="top-nav__li"><a class="top-nav__anchor" href="Poker">Poker</a></li>
-            <li class="top-nav__li"><a class="top-nav__anchor" href="Deportes">Deportes</a></li>
-            <li class="top-nav__li"><a class="top-nav__anchor" href="Casino">Casino</a></li>
-            <li class="top-nav__li"><a class="top-nav__anchor" href="Caballos">Caballos</a></li>
-            <li class="top-nav__li"><a class="top-nav__anchor" href="Cajero">Cajero</a></li>
-            <li class="top-nav__li"><a class="top-nav__anchor" href="Promociones">Promociones</a></li>
-            <li class="top-nav__li"><a class="top-nav__anchor" href="Blog">Blog</a></li>
-            <li class="top-nav__li"><a class="top-nav__anchor" href="Eventos">Eventos</a></li>
-          </ul>
-          <div class="top-nav__btns--container btn">
-            <button class="btn__secondary btn sign" type="button">Ingresar</button><a class="btn__primary btn display" href="../signUp.html">Unete</a>
-          </div>
-        </div>
-      </nav>
-      <div class="overlay"></div>
-      <div class="ed-container modal__container close">
-        <div class="modal">
-          <h3 class="modal__h3">Inicia sesión</h3>
-          <form class="modal__form" action=""> 
-            <label class="modal__form--label" for="email">correo electrónico
-              <input class="modal__form--input" type="email" name="email" placeholder="Ingresa tu correo">
-            </label>
-            <label class="modal__form--label" for="password">Contraseña 
-              <input class="modal__form--input" type="password" name="password" placeholder="Ingresa tu contraseña">
-            </label>
-            <button class="modal__form--button btn btn__primary" type="submit">Iniciar sesión</button>
-            <div class="modal__form--signup"> 
-              <p>¿No tienes cuenta? <a href="../signUp.html"> Regístrate</a></p>
-            </div><a class="modal__form--anchor" hrefs="./"> ¿Olvidaste la Contraseña?</a>
-          </form>
-        </div>
-      </div>
-    </header>
+  <body class="Registro background" overlay itemscope itemtype="http://schema.org/WebPage">
     <main class="main-container">
-      <div class="background"></div>
-      <div class="ed-container modal__container">
-        <div class="signUp"><img src="assets/img/logo.png" alt="">
-          <h3 class="signUp__h3">Crea tu cuenta</h3>
-          <form class="signUp__form" action=""> 
-            <div class="signUp__form--container"> 
-              <label class="signUp__form--label" for="text">Nombre
-                <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu nombre">
-              </label>
-              <label class="signUp__form--label" for="text">Apellido
-                <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu apellido">
-              </label>
-            </div>
-            <label class="signUp__form--label" for="email">correo electrónico
-              <input class="signUp__form--input" type="email" name="email" placeholder="Ingresa tu correo">
-            </label>
-            <label class="signUp__form--label" for="password">Contraseña 
-              <input class="signUp__form--input" type="password" name="password" placeholder="Ingresa tu contraseña">
-            </label>
-            <label class="signUp__form--label" for="password">Confirmar Contraseña 
-              <input class="signUp__form--input" type="password" name="password" placeholder="Comfirma tu contraseña">
-            </label>
-            <label for="checkbox">
-              <input type="checkbox" name="checkbox" id="cbox1" value="first_checkbox"><a class="signUp__form--anchor" href="./"> Leer las reglas</a>
-            </label>
-            <button class="signUp__form--button btn btn__primary" type="submit">Resgistrarme</button>
-            <div class="signUp__form--signup"> 
-              <p>¿Ya tienes cuenta? <a href="./"> Iniciar Sesión</a></p>
-            </div>
-          </form>
-        </div>
-      </div>
     </main>
-    <footer class="main-footer">
-      <div class="ed-container">
-        <div class="ed-item">
-          <h2>Contact</h2>
-        </div>
-      </div>
-      <div class="ed-grid m-grid-2 lg-grid-4 row-gap">
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 1</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 2</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 3</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 4</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 5</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 6</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 7</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 8</a></i></li>
-        </ul>
-      </div>
-    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="assets/js/scripts-min.js"></script>
   </body>

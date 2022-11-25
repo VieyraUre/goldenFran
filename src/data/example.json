@@ -127,5 +127,250 @@
 					"alt"		:"jsjsjsj"
 				}
 
+			],
+		"currencies":
+			[
+				{
+					"currency"		:"EUR"
+				},
+				{
+					"currency"		:"ARG"
+				},
+				{
+					"currency"		:"MXN"
+				},
+				{
+					"currency"		:"USD"
+				}
+			],
+
+		"contries":
+			[
+				{
+					"contry"		:"Costa Rica"
+				},
+				{
+					"contry"		:"Belize"
+				},
+				{
+					"contry"		:"Venezuela"
+				}
+			],
+
+		"plays": 
+			[
+				{
+					"img"			:"assets/img/live.png",
+					"text"			:"Juegos en vivo",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/table.png",
+					"text"			:"Juegos de mesa",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/slots.png",
+					"text"			:"Slots",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/3d-slots.png",
+					"text"			:"3D Slots",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/video-poker.png",
+					"text"			:"Video Poker",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/virtual-sports.png",
+					"text"			:"Deportes virtuales",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/bingo.png",
+					"text"			:"Bingo",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/keno.png",
+					"text"			:"Keno",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/scratch-card.png",
+					"text"			:"Tarjetas de raspar",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/fixed-odds.png",
+					"text"			:"Apuestas fijas",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/other-game.png",
+					"text"			:"Otros Juegos",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/blackjack.png",
+					"text"			:"Blackjack",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/roulette.png",
+					"text"			:"Ruleta",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/poker.png",
+					"text"			:"Poker",
+					"link"			:"/juegos-vivo"
+				},
+				{
+					"img"			:"assets/img/rummy.png",
+					"text"			:"Rummy",
+					"link"			:"/juegos-vivo"
+				}
+			],
+			"providers": [
+				{
+					"img": "assets/img/providers/pragmatic_play.png",
+					"alt": "pragmatic play"
+				},
+				{
+					"img": "assets/img/providers/slot-exchange.png",
+					"alt": "slotexchange"
+				},
+				{
+					"img": "assets/img/providers/betsoft.png",
+					"alt": "betsoft"
+				},
+				{
+					"img": "assets/img/providers/conceptgaming.png",
+					"alt": "conceptgaming"
+				},
+				{
+					"img": "assets/img/providers/platinum.png",
+					"alt": "platinum"
+				},
+				{
+					"img": "assets/img/providers/salsa.png",
+					"alt": "salsa"
+				},
+				{
+					"img": "assets/img/providers/tomhorn.png",
+					"alt": "tomhorn"
+				},
+				{
+					"img": "assets/img/providers/ezugi.png",
+					"alt": "ezugi"
+				},
+				{
+					"img": "assets/img/providers/top-live-casino.png",
+					"alt": "top live  casino"
+				},
+				{
+					"img": "assets/img/providers/betgamestv.png",
+					"alt": "bet games.tv"
+				},
+				{
+					"img": "assets/img/providers/evolutiongaming.png",
+					"alt": "evolution gaming"
+				},
+				{
+					"img": "assets/img/providers/evoplay.png",
+					"alt": "evo play"
+				},
+				{
+					"img": "assets/img/providers/spinomenal.png",
+					"alt": "spinomenal"
+				},
+				{
+					"img": "assets/img/providers/booongo.png",
+					"alt": "booongo"
+				},
+				{
+					"img": "assets/img/providers/vivogaming.png",
+					"alt": "vivo gaming"
+				},
+				{
+					"img": "assets/img/providers/wazdan.png",
+					"alt": "wazdan"
+				},
+				{
+					"img": "assets/img/providers/irondog.png",
+					"alt": "iron dog"
+				},
+				{
+					"img": "assets/img/providers/1x2gaming.png",
+					"alt": "1x2gaming"
+				},
+				{
+					"img": "assets/img/providers/sagaming.png",
+					"alt": "sa gaming"
+				},
+				{
+					"img": "assets/img/providers/booming.png",
+					"alt": "booming games"
+				},
+				{
+					"img": "assets/img/providers/noble.png",
+					"alt": "noble"
+				},
+				{
+					"img": "assets/img/providers/felix.png",
+					"alt": "felix gaming"
+				},
+				{
+					"img": "assets/img/providers/nucleus.png",
+					"alt": "nucleus"
+				},
+				{
+					"img": "assets/img/providers/nucleus.png",
+					"alt": "gamshy"
+				},
+				{
+					"img": "assets/img/providers/revolver.png",
+					"alt": "revolver"
+				},
+				{
+					"img": "assets/img/providers/Elik.png",
+					"alt": "elk studios"
+				},
+				{
+					"img": "assets/img/providers/Thunderkick.png",
+					"alt": "Thunderkick"
+				},
+				{
+					"img": "assets/img/providers/habanero.png",
+					"alt": "habanero"
+				},
+				{
+					"img": "assets/img/providers/playson.png",
+					"alt": "play son"
+				},
+				{
+					"img": "assets/img/providers/goldenrace.png",
+					"alt": "golden Rame"
+				},
+				{
+					"img": "assets/img/providers/nsoft.png",
+					"alt": "nsoft"
+				},
+				{
+					"img": "assets/img/providers/jackpot.png",
+					"alt": "jackpot software"
+				},
+				{
+					"img": "assets/img/providers/One-touch.png",
+					"alt": "one touch"
+				},
+				{
+					"img": "assets/img/providers/5men.png",
+					"alt": "5 men gaming"
+				}
 			]
 }

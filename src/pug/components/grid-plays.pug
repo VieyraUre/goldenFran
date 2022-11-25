@@ -1,0 +1,19 @@
+mixin playCards(img, text, link)
+	div(class="grid__card")
+		a(href=link class="grid__anchore") 
+			img(src=img, alt=text, class="grid__img")
+			p(class="grid__p")= text 
+
+section(class='casino') 
+	div(class="casino__layout")
+		div(class="casino__layout--col1")
+			div(class="casino__layout--grid ed-grid s-grid-2 m-grid-3 l-grid-4")
+				-for(var i = 0; i < plays.length ; i++)
+					-var play = plays[i]
+					+playCards(play.img, play.text, play.link)
+		div(class="casino__layout--col2") 
+				h3(class="casino__layout--title")  PROVIDERS
+				div(class="ed-grid s-grid-2 m-grid-4 l-grid-2 casino__layout--imgs")
+					-for(var i = 0; i < providers.length ; i++)
+						-var provider = providers[i]
+						img(src=provider.img, alt=provider.alt)

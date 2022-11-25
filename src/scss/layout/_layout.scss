@@ -1,41 +1,13 @@
 body {
 	margin         	: var(--header-height) 0 0 0;
 	min-height     	: calc(100vh - var(--header-height));
-	background 		: var(--body-bg);
+	background 		: var(--color-background);
 	display        	: flex;
 	flex-direction 	: column;
 }
 
 .main-header{}
 .main-container{
-	.container{
-		//border: 1px solid black;
-		//position: relative;
-		width: 100%;
-		max-width: 1440px;
-		margin: 0 auto;
-
-		&__slider{
-			min-height: 25vh;
-			background: red;
-			@include from(l){
-				margin-right: 250px;
-			}
-		}
-
-		&__signup{
-			width: 250px;
-			min-height: 25vh;
-			background: green;
-			margin: 0 auto;
-			@include from(l){
-				position: absolute;
-				right: 0;
-				top: 0;
-				
-			}
-		}
-	}
 }
 .main-footer {
 	background 		: $color-first;
