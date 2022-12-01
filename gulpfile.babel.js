@@ -115,6 +115,19 @@ gulp.task('pug-build', () =>
 		.pipe(gulp.dest('./public'))
 );
 
+gulp.task('es-dev', () =>
+	gulp.src('./src/pug/es/pages/**/*.pug')
+		.pipe(plumber())
+		.pipe(data(function(file) {
+			return 	JSON.parse(fs.readFileSync(`${dir.src}/data/data-es.json`))
+		}))
+		.pipe(pug({
+			pretty: true,
+			basedir: './src/pug/es'
+		}))
+		.pipe(gulp.dest('./public/es'))
+);
+
 gulp.task('scripts-dev', () =>
 	browserify('./src/js/index.js')
 		.transform(babelify, {
@@ -218,7 +231,7 @@ gulp.task('sitemap', () => {
 		.pipe(gulp.dest('./public'))
 });
 
-gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-dev', 'videos-dev', 'fonts-dev', 'manifest', 'sw'], () => {
+gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-dev', 'videos-dev', 'fonts-dev', 'manifest', 'sw', 'es-dev'], () => {
 	server.init({
 		server: {
 			baseDir: './public'
@@ -228,6 +241,7 @@ gulp.task('dev', ['styles-dev', 'pug-dev', 'scripts-dev', 'images-dev','audios-d
 	watch('./src/scss/**/**', () => gulp.start('styles-dev'));
 	watch('./src/js/**/**', () => gulp.start('scripts-dev', server.reload));
 	watch('./src/pug/**/**', () => gulp.start('pug-dev', server.reload));
+	watch('./src/pug/es/**/**', () => gulp.start('es-dev'));
 	watch('./src/img/**/**', () => gulp.start('images-dev'))
 	watch('./src/manifest.json', () => gulp.start('manifest'))
 	watch('./src/sw.js', () => gulp.start('sw'))
