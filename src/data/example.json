@@ -265,24 +265,20 @@
 	],
 	"column1": [
 		{
-			"item": "Casa de apuestas en linea",
+			"item": "Deportes",
 			"link": "deportes.html"
 		},
 		{
-			"item": "Casino en vivo",
+			"item": "Casino",
 			"link": "casino.html"
 		},
 		{
-			"item": "Caballos en vivo",
+			"item": "Caballos",
 			"link": "racebook.html"
 		},
 		{
 			"item": "Registrarme",
 			"link": "registro.html"
-		},
-		{
-			"item": "Sobre Nosotros",
-			"link": "sobre-nosotros.html"
 		}
 	],
 	"column2": [
@@ -291,12 +287,16 @@
 			"link": "banca.html"
 		},
 		{
-			"item": "Bonos y promocioness",
-			"link": "bonos.html"
+			"item": "Acerca",
+			"link": "acerca.html"
 		},
 		{
-			"item": "sportsbook agent admin",
-			"link": "Iniciar sesion.html"
+			"item": "Mapa de sitio",
+			"link": "mapa-de-sitio.html"
+		},
+		{
+			"item": "Términos y Condiciones",
+			"link": "terminos-y-condiciones.html"
 		}
 	],
 	"column3": [

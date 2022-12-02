@@ -14,9 +14,8 @@ mixin connect(icon, link, alt)
 
 div(class="main-footer__top")
 	a(class='main-footer__top--logo' href='/')
-		img(src='../assets/img/fanattic.bet_logo.png', alt='fanattic logo' class="top-nav__logo")
-	a(class='ed-item' href="#")  email us: support@fanattic.bet
-div(class='ed-grid m-grid-2 lg-grid-4 row-gap main-footer__content')
+		img(src='assets/img/logo.png', alt='Golden Fran logo' class="top-nav__logo")
+div(class='ed-grid m-grid-2 lg-grid-3 row-gap main-footer__content')
 	ul(class="main-footer__ul").data-list
 		-for(var i = 0; i < column1.length ; i++)
 			-var item = column1[i]
@@ -29,12 +28,16 @@ div(class='ed-grid m-grid-2 lg-grid-4 row-gap main-footer__content')
 		-for(var i = 0; i < column3.length ; i++)
 			-var item = column3[i]
 			+column3(item.item, item.link)
-	ul(class="main-footer__ul").data-list
-		li
-			h4 Connect
-			div(class="main-footer__connect--container")
-				ul(class="main-footer__connect--list") 
-					-for(var i = 0; i < connect.length ; i++)
-						-var item = connect[i]
-						+connect(item.icon, item.link, item.alt)
+a(href="juego-responsable.html" class="btn btn__primary") juego responsable 
+div(class="main-footer__bottom")
+	p Powered by JazzGS
+	img(src='assets/img/powered-jgs.png', alt='jazz logo' class="main-footer__logo")
+	//- ul(class="main-footer__ul").data-list
+	//- 	li(class="main-footer__li")
+	//- 		h4 Connect
+	//- 		div(class="main-footer__connect--container")
+	//- 			ul(class="main-footer__connect--list") 
+	//- 				-for(var i = 0; i < connect.length ; i++)
+	//- 					-var item = connect[i]
+	//- 					+connect(item.icon, item.link, item.alt)
 

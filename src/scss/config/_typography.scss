@@ -4,14 +4,14 @@
 }
 
 // Font families
-$body-font    : Lato,        'sans-serif';
+$body-font    : 'Lato', sans-serif;
 $heading-font : 'Open Sans', 'sans-serif';
 
 // CSS variables for typography
 :root {
   // Font families
   --heading-font : 'Open Sans', sans-serif;
-  --body-font    : Lato,        sans-serif;
+  --body-font    : 'Lato', sans-serif;
 
   // Font sizes
   --h1-font-size        : #{rem(24px)};
@@ -189,12 +189,13 @@ blockquote {
 // Menu links doesn't have underline
 a {
   color : var(--second-color);
-
+  
   main & {
-    text-decoration : none;
-
-    &:hover {
-      text-decoration : underline;
+	  text-decoration : none;
+	  
+	  &:hover {
+		//   text-decoration : underline;
+		  color : var(--color-first-opacy);
     }
   }
 }

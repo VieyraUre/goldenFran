@@ -702,37 +702,37 @@
 		{
 			"img": "../assets/img/1-banking_all.png",
 			"alt": "bitcoin, bitcoin cash, litecoin, dash, ethereum",
-			"link": "signUp.html",
-			"textLink": "Deposit Now"
+			"link": "registro.html",
+			"textLink": "Depositar ahora"
 		},
 
 		{
 			"img": "../assets/img/2-banking_p2p.png",
 			"alt": "p2p",
-			"link": "signUp.html",
-			"textLink": "Deposit Now"
+			"link": "registro.html",
+			"textLink": "Depositar ahora"
 		},
 
 		{
 			"img": "../assets/img/3-banking_visa_p2p.png",
 			"alt": "visa",
-			"link": "signUp.html",
-			"textLink": "Deposit Now"
+			"link": "registro.html",
+			"textLink": "Depositar ahora"
 		}
 	],
 	"bankingWithdraw": [
 		{
 			"img": "../assets/img/1-banking_all.png",
 			"alt": "bitcoin, bitcoin cash, litecoin, dash, ethereum",
-			"link": "signUp.html",
-			"textLink": "Withdraw Now"
+			"link": "registro.html",
+			"textLink": "Retirar ahora"
 		},
 
 		{
 			"img": "../assets/img/2-banking_p2p.png",
 			"alt": "p2p",
-			"link": "signUp.html",
-			"textLink": "Withdraw Now"
+			"link": "registro.html",
+			"textLink": "Retirar ahora"
 		}
 	],
 	"sliderBonuses": [

@@ -1,7 +1,7 @@
 body {
 	margin         	: var(--header-height) 0 0 0;
 	min-height     	: calc(100vh - var(--header-height));
-	background 		: var(--color-background);
+	background 		: var(--color-background-dark);
 	display        	: flex;
 	flex-direction 	: column;
 }
@@ -11,24 +11,34 @@ body {
 }
 
 .main-footer {
-	background 		: var(--color-backgroundTwo);
+	background 		: var(--color-hover);
+	// background-image: url('/assets/img/footer-bg.png');
+	// background-repeat: no-repeat;
+	// background-size: cover;
 	color      		: var(--color-body);
-	padding    		: 28px 0 72px 0;
+	padding    		: 28px 0 48px 0;
 	font-size  		: fontSize(small);
 	margin-top 		: auto;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	a:hover {
-		color: var(--color-body);
 		margin-left: 0px;
+	}
+
+	&__logo {
+		width: 80px;
 	}
 
 	&__ul {
 		padding-left: 0px;
-		width: 50%;
-		border-bottom: 1px solid var(--color-first);
+		// width: 90%;
 		padding-bottom: 26px;
 		list-style: none;
+		font-size: var(--normal-font-size);
+		font-weight: 600;
 		
 		@include from(m) {
 			border-bottom: none;
@@ -40,9 +50,22 @@ body {
 		margin-bottom: 72px;
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		text-align: center;
+	}
+	
+	&__bottom {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		text-align: center;
+		gap: 0.5rem;
+
+		p {
+			margin-bottom: 0;
+		}
 	}
 
 	&__content {
@@ -53,12 +76,20 @@ body {
 	&__li {
 		list-style: none;
 		text-transform: capitalize;
+		text-align: center;
+		margin-bottom: 1rem;
 	}
 
 	&__connect--list {
 		display: flex;
 		gap: 20px;
 		padding-left: 0;
+		align-items: center;
+		justify-content: center;
+		
+		@include from(l) {
+			justify-content: flex-start;
+		}
 		
 		img {
 			width: 24px;
@@ -71,6 +102,9 @@ body {
 	}
 	
 	&__connect--li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		color: var(--color-body);
 		font-size: 18px;	
 		list-style: none;

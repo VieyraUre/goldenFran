@@ -12,18 +12,37 @@
 	
 	&__card {
 		background-color: var(--color-hover);
+		border-width: 3px;
+		border-image-slice: 1;
+		border: 1px solid var(--color-first-opacy);
 		border-radius: 0.5rem;
 		box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.34);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;	
-		margin-bottom: 56px;
+		margin-bottom: 64px;
+		padding: 1rem;
 		height: 100px;
+		
 		
 		@include from(l) {
 			margin-bottom: 72px;
 			height: 200px;
+			
+			.grid__img{
+				transition: 0.5s;
+			}
+			&:hover  {
+				.grid__img {
+					transform: perspective(900px) scale(1) translate(0px,-20px);
+					transform-origin: center center;
+				}
+
+				.grid__p {
+					color: var(--color-first);
+				}
+			}
 		}
 	}
 
@@ -37,12 +56,16 @@
 
 		@include from(l) {
 			width: 100%;
+
+			// &:hover {
+			// 	transform: perspective(900px) scale(1) translate(0px,-20px);
+			// 	transform-origin: center center;
+			// }
 		}
 	}
 
 	&__p {
 		color: var(--color-body);
 		font-weight: 600;
-
 	}
 }

@@ -1,5 +1,5 @@
 mixin playCards(img, text, link)
-	div(class="grid__card")
+	div(class="grid__card card-gradient-yellow")
 		a(href=link class="grid__anchore") 
 			img(src=img, alt=text, class="grid__img")
 			p(class="grid__p")= text 
@@ -12,7 +12,7 @@ section(class='casino')
 					-var play = plays[i]
 					+playCards(play.img, play.text, play.link)
 		div(class="casino__layout--col2") 
-				h3(class="casino__layout--title")  PROVIDERS
+				h3(class="casino__layout--title")  PROVEEDORES
 				div(class="ed-grid s-grid-2 m-grid-4 l-grid-2 casino__layout--imgs")
 					-for(var i = 0; i < providers.length ; i++)
 						-var provider = providers[i]

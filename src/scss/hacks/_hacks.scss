@@ -31,6 +31,12 @@ img {
 }
 .foot-icon{
 	margin-left: 5px;
+
+	@include from(l) {
+		&:hover {
+			color: var(--color-first);
+		}
+	}
 }
 // posiciono un componente cerca del elemento padre
 .modal__container {

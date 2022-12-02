@@ -1,0 +1,17 @@
+section(class="poker-layout")
+	div(class="poker-layout__container") 
+		div(class="poker-layout__container--content") 
+			p 
+		div(class="poker-layout__container--img") 
+			picture 
+				source
+				img(src="", alt="")
+	div(class="poker-layout__poker")  
+		div(class="poker-layout__poker--grid")
+			-for(var i = 0; i < software.length; i++)
+				div(class="grid__card")
+				h2 
+				img(src=games[i].img alt=games[i].text class="grid__img")
+				a(href="") 
+	button Unete
+
