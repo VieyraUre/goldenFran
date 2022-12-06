@@ -188,7 +188,7 @@ blockquote {
 // Links
 // Menu links doesn't have underline
 a {
-  color : var(--second-color);
+  color : var(--color-body);
   
   main & {
 	  text-decoration : none;
@@ -201,6 +201,6 @@ a {
 }
 
 ::selection {
-  background : var(--second-color);
+  background : var(--color-body);
   color      : #FFF
 }

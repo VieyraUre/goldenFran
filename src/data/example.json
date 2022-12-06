@@ -334,25 +334,25 @@
 		{
 			"lobbies": [
 				{
-					"img": "../assets/img/freshdeck.png",
-					"alt": "Fresh desk",
-					"title": "Fresh desk",
+					"img": "../assets/img/live-games/evolution.jpg",
+					"alt": "evolution lobby",
+					"title": "Evolution lobby",
 					"textLink": "Play",
 					"href": "iniciar-sesion.html"
 				},
 				{
-					"img": "../assets/img/fresh-deck.jpg",
-					"alt": "Fresh desk",
-					"title": "Fresh desk",
+					"img": "../assets/img/live-games/ezugi.jpg",
+					"alt": "ezugi",
+					"title": "Ezugi lobby",
 					"textLink": "Play",
 					"href": "iniciar-sesion.html"
 				}
 			],
 			"seeMore": [
 				{
-					"img": "../assets/img/freshdeck.png",
-					"alt": "Fresh desk",
-					"title": "Fresh desk",
+					"img": "../assets/img/live-games/Baccarat1.jpg",
+					"alt": "Baccarat",
+					"title": "Baccarat",
 					"textLink": "Play",
 					"href": "iniciar-sesion.html"
 				}
@@ -1232,6 +1232,29 @@
 			"title": "Rummy",
 			"textLink": "Play",
 			"href": "iniciar-sesion.html"
+		}
+	],
+
+	"system": [
+		{
+			"title": "Desktop Windows",
+			"img": "assets/img/windows.png",
+			"dowload": "https://lapokers.evenbetpoker.com/downloads/PokerFran/win/PokerFranSetup.exe"
+		},
+		{
+			"title": "App android",
+			"img": "assets/img/android.png",
+			"dowload": "https://www.signapps.info/eapp_param=1448_1615882782"
+		},
+		{
+			"title": "App IOS",
+			"img": "assets/img/IOS.png",
+			"dowload": "https://lapokers.evenbetpoker.com/downloads/PokerFran/android/PokerFran.apk"
+		},
+		{
+			"title": "Desktop MAC",
+			"img": "assets/img/compu.png",
+			"dowload": "https://lapokers.evenbetpoker.com/downloads/PokerFran/mac/PokerFranSetup.dmg"
 		}
 	]
 }

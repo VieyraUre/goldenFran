@@ -11,6 +11,7 @@
 		padding: 0.5rem 0;
 		gap: 0.2rem;
 		margin: 2rem 0 2rem 0;
+		color: var(--color-body);
 		// background-color: var(--color-second);
 
 		a{
@@ -19,14 +20,14 @@
 			flex-direction: row-reverse;
 			padding: 0.2rem 0.2rem;
 			padding-right: 0.8rem;
-			border: 0.5px solid gray;
+			border: 0.5px solid var(--color-second);
 			text-transform: capitalize;
 			border-radius: 0.2rem;
 			justify-content: center;
 			
 			&:active {
-				border: 0.5px solid var(--color-heading );
-				color: var(--color-heading );
+				border: 0.5px solid var(--color-second);
+				color: var(--color-second);
 			}
 			
 			@include from(l) {
@@ -35,8 +36,8 @@
 				
 				&:hover {
 					background-color: var(--color-second);
-					color: var(--color-background);
-					border: 0.5px solid var(--color-second);
+					color: var(--color-body);
+					// border: 0.5px solid var(--color-second);
 				}
 
 			}
@@ -69,8 +70,9 @@
 
     &__container--h3 {
         font-size: var(--h3-font-size);
-        color: var(--color-heading);
+        color: var(--color-body);
 		margin-bottom: 1.5rem;
+		text-transform: capitalize;
 
     }
 
@@ -104,28 +106,35 @@
     }
 
     &__card--content {
-        background: rgba(0, 0, 0, 0.70);;
+        background: rgba(0, 0, 0, 0.80);;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0.5rem 0;
+		text-transform: capitalize;
 
     }
 
     &__card--content-h3 {
-        font-size: var(--small-font-size );
-        color: var(--color-background);
+        font-size: var(--h3-font-size);
+        color: var(--color-body);
     }
 
     &__card--content-a {
         width: 80%;
         text-align: center;
-
+		background-color: var(--color-first-opacy);
+		padding: 0.5rem 0;
+		color: var(--color-background);
+		font-weight: 800;
+		transition: 0.5s;
+		
         @include from(l) {
-            &:hover {
-                color: var(--color-background);
+			&:hover {
+				color: var(--color-background);
+				background-color: var(--color-first);
             }
         }
     }

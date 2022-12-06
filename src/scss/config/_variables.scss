@@ -1,8 +1,8 @@
 //layout
 :root {
-  --header-height 		: 4rem;
+  --header-height 		: 5rem;
   @include from(l) {
-    --header-height 	: 5rem;
+    --header-height 	: 6rem;
   }
 	//native color vars
 	--color-background      	: #242440;
